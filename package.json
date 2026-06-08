@@ -1,0 +1,39 @@
+{
+  "name": "axiom",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Copiloto comercial tribut\u00e1rio \u2014 CNPJ \u2192 dossi\u00ea estrat\u00e9gico",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc --noEmit",
+    "dev:up": "npx tsx scripts/dev-up.ts",
+    "dev:reset": "npx tsx scripts/dev-reset.ts",
+    "check:system": "npx tsx scripts/check-system.ts",
+    "gen:test-dossiers": "npx tsx scripts/generate-test-dossiers.ts",
+    "clean": "rimraf .next",
+    "fresh": "rimraf .next && next dev"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.383.0",
+    "next-auth": "^4.24.7",
+    "bcryptjs": "^2.4.3",
+    "stripe": "^16.0.0",
+    "resend": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "tailwindcss": "^3.4.5",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tsx": "^4.16.0",
+    "@types/bcryptjs": "^2.4.6"
+  }
+}
